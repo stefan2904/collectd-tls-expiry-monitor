@@ -1,0 +1,10 @@
+language: python
+
+python:
+  - "2.7"
+
+install:
+  - sudo apt install collectd
+
+script:
+  - collectd -T -C collectd.conf
