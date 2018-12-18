@@ -1,5 +1,7 @@
 # collectd-tls-expiry-monitoring
 
+![Build Status](https://travis-ci.org/stefan2904/collectd-tls-expiry-monitor.svg?branch=master)](https://travis-ci.org/stefan2904/collectd-tls-expiry-monitor)
+
 Minimal collectd module to report expiry time of a HTTPS TLS certificate.
 
 
