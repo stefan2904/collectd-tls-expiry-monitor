@@ -3,7 +3,7 @@ language: python
 python:
   - "2.7"
 
-install:
+before_install:
   - sudo apt install collectd
 
 script:
