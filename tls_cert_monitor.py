@@ -4,7 +4,7 @@ import collectd
 import ssl
 
 PLUGIN_NAME = 'tls-cert-monitor'
-INTERVAL = 60  # seconds
+INTERVAL = 10  # seconds
 
 _hosts = None
 
