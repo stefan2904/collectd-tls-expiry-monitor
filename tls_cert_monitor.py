@@ -62,7 +62,10 @@ def ssl_expiry_datetime(hostname):
 
 def ssl_valid_time_remaining(hostname):
     """Get the number of days left in a cert's lifetime."""
-    expires = ssl_expiry_datetime(hostname)
+    try:
+        expires = ssl_expiry_datetime(hostname)
+    except ssl.SSLError:
+        return datetime.timedelta(0)
     return expires - datetime.datetime.utcnow()
 
 
